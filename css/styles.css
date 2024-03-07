@@ -11,3 +11,19 @@ body{
     font-size: 15px;
     font-family: Inter;
 }
+
+.contenedor{
+    width: 90%;
+}
+
+#portada{
+    width: 20%;
+}
+
+.above{
+    display: flex;
+}
+
+#title{
+    width: 800px;
+}
