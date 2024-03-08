@@ -10,35 +10,50 @@
 *{
     margin: 0;
     padding: 0;
-}
-
-nav{
-    height: 80px;
-}
-
-body{
-    font-size: 15px;
     font-family: Inter;
 }
 
-.contenedor{
-    width: 90%;
+p{
+    font-size: 17px;
 }
 
-#portada{
-    width: 200px;
+nav{
     height: 100px;
 }
 
-.above{
-    display: flex;
+.containerAbove{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding-top: 50px;
+}
+
+#portada{
+    width: 700px;
+    height: 300px;
 }
 
 #title{
-    width: 800px;
+    font-weight: bold;
+    font-size: 55px;
 }
 
-.container-above{
+#paragraph{
+    padding: 15px 0;
+}
+
+#centralNew{
     display: grid;
-    grid-template-columns: 2;
+    grid-template-rows: 2;
+}
+
+#centralText{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    padding-top: 15px;
+}
+
+.column-right{
+    width: 80%;
+    padding-left: 20px;
+    font-size: 17px;
 }

@@ -2,7 +2,7 @@
 let newsRight=document.querySelector('.news-right')
 //console.log(newsRight)
 
-fetch('../data/news-right.json')
+fetch('/data/news-right.json')
 .then((respuesta) => {
     return respuesta.json()
 })
