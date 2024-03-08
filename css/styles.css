@@ -7,6 +7,15 @@
     --very-dark-blue: hsl(240, 100%, 5%)
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    height: 80px;
+}
+
 body{
     font-size: 15px;
     font-family: Inter;
@@ -17,7 +26,8 @@ body{
 }
 
 #portada{
-    width: 20%;
+    width: 200px;
+    height: 100px;
 }
 
 .above{
@@ -26,4 +36,9 @@ body{
 
 #title{
     width: 800px;
+}
+
+.container-above{
+    display: grid;
+    grid-template-columns: 2;
 }
