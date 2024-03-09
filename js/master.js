@@ -9,7 +9,7 @@ fetch('/data/news-right.json')
 
 .then((news)=>{
     //console.log(news);
-    let newsRight= document.querySelector('.news-right')
+    let newsRight= document.querySelector('.column-right')
     news.forEach(rightNew => {
         newsRight.innerHTML += `
         <div class='new-right'>
