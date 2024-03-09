@@ -32,26 +32,31 @@ nav{
 .containerAbove{
     display: grid;
     grid-template-columns: 65% 35%;
-    padding-top: 20px;
+    /*padding-top: 20px;*/
 }
 
-#portada{
+/*#portada{
     width: 700px;
     height: 300px;
-}
+}*/
 
 #title{
     font-weight: bold;
     font-size: 50px;
 }
 
-#paragraph{
+/*#paragraph{
     padding-top: 15px;
-}
+}*/
 
 #centralNew{
     display: grid;
-    grid-template-rows: 2;
+    grid-template-rows: 2;  
+}
+
+#portada{
+    width: 90%;
+    height: auto;
 }
 
 #centralText{
@@ -102,3 +107,5 @@ nav{
     padding-bottom: 30px;
     color: var(--off-white);
 }
+
+/*query hasta 991px sigue acordeon, en 992 ya es para pc*/
