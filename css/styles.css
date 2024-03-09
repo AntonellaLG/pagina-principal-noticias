@@ -53,6 +53,7 @@ nav{
 #centralText{
     display: grid;
     grid-template-columns: 45% 45%;
+    padding-top: 15px;
 }
 
 #btn-more{
