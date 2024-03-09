@@ -14,7 +14,7 @@ fetch('/data/news-below.json')
             <h3 class='number-new-below'>${belowNew.number}</h3>
             <h4 class='title-new-below'>${belowNew.title}</h4>
             <p class='paragraph-new-below'>${belowNew.paragraph}</p> 
-            <img src='${belowNew.img}' alt='Imagen de la noticia ${belowNew.number}'>
+            <img class='img-new-below' src='${belowNew.img}' alt='Imagen de la noticia ${belowNew.number}'>
       </div>
       `
     });

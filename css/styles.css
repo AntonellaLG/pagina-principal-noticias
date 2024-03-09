@@ -100,4 +100,9 @@ nav{
     color: var(--off-white);
 }
 
+.container-below{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
 /*jquery hasta 991px sigue acordeon, en 992 ya es para pc*/
