@@ -11,10 +11,14 @@ fetch('/data/news-below.json')
     newsB.forEach(belowNew => {
         newsBelow.innerHTML += `
         <div class='new-below'>
-            <h3 class='number-new-below'>${belowNew.number}</h3>
-            <h4 class='title-new-below'>${belowNew.title}</h4>
-            <p class='paragraph-new-below'>${belowNew.paragraph}</p> 
-            <img class='img-new-below' src='${belowNew.img}' alt='Imagen de la noticia ${belowNew.number}'>
+            <div>
+                <img class='img-new-below' src='${belowNew.img}' alt='Imagen de la noticia ${belowNew.number}'>
+            </div>
+            <div class='text-new-below'>
+                <h3 class='number-new-below'>${belowNew.number}</h3>
+                <h4 class='title-new-below'>${belowNew.title}</h4>
+                <p class='paragraph-new-below'>${belowNew.paragraph}</p> 
+            </div>
       </div>
       `
     });

@@ -37,6 +37,7 @@ nav{
 #title{
     font-weight: bold;
     font-size: 50px;
+    color: var(--very-dark-blue);
 }
 
 #centralNew{
@@ -54,6 +55,7 @@ nav{
     display: grid;
     grid-template-columns: 45% 45%;
     padding-top: 15px;
+    color: var(--dark-grayish-blue);
 }
 
 #btn-more{
@@ -104,5 +106,35 @@ nav{
     padding-top: 10px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+}
+
+.new-below{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.img-new-below{
+    width: 100%;
+    height: 80%;
+}
+
+.text-new-below{
+    padding: 15px;
+    display: grid;
+    grid-template-rows: 3;
+}
+
+.number-new-below{
+    color: var(--grayish-blue);   
+}
+
+.title-new-below{
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
+
+.paragraph-new-below{
+    color: var(--dark-grayish-blue);
 }
 /*jquery hasta 991px sigue acordeon, en 992 ya es para pc*/
