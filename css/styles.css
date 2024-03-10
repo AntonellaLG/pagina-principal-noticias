@@ -12,57 +12,41 @@
     padding: 0;
 }
 
-p{
+/*p{
     font-size: 15px;
-}
+}*/
 
-nav{
+/*nav{
     height: 100px;
-}
+}*/
 
-.nav-item{
+/*.nav-item{
     font-size: 18px;
     padding: 15px;
-}
+}*/
 
 .nav-item:hover{
     color: var(--soft-red);
 }
 
-.containerAbove{
+/*.containerAbove{
     display: grid;
     grid-template-columns: 65% 35%;
-}
+}*/
 
 #title{
     font-weight: bold;
-    font-size: 50px;
     color: var(--very-dark-blue);
-}
-
-#centralNew{
-    display: grid;
-    grid-template-rows: 2;  
-    gap: 15px;
-}
-
-#portada{
-    width: 90%;
-    height: 35vh;
 }
 
 #centralText{
     display: grid;
-    grid-template-columns: 45% 45%;
     color: var(--dark-grayish-blue);
 }
 
 #btn-more{
     border: none;
-    padding: 15px 25px;
-    font-size: 13px;
     font-weight: bold;
-    letter-spacing: 0.4em;
     color: var(--off-white);
     background-color: var(--soft-red);
 }
@@ -73,22 +57,17 @@ nav{
 
 .column-right{
     width: 80%;
-    padding: 25px;
     background-color: var(--very-dark-blue);
 }
 
 #title-right{
     margin: 0;
-    padding-bottom: 25px;
-    font-size: 30px;
     font-weight: bold;
     color: var(--soft-orange);
 }
 
 .subtitle-right{
     margin: 0;
-    padding-bottom: 15px;
-    font-size: 18px;
     color: var(--off-white);
 }
 
@@ -105,9 +84,7 @@ hr{
 }
 
 .container-below{
-    padding-top: 50px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
 }
 
 .new-below{
@@ -121,7 +98,6 @@ hr{
 }
 
 .text-new-below{
-    padding-left: 15px;
     display: grid;
     grid-template-rows: 3;
 }
@@ -131,7 +107,6 @@ hr{
 }
 
 .title-new-below{
-    font-size: 17px;
     font-weight: bold;
     color: var(--very-dark-blue);
 }
@@ -139,4 +114,179 @@ hr{
 .paragraph-new-below{
     color: var(--dark-grayish-blue);
 }
-/*jquery hasta 991px sigue acordeon, en 992 ya es para pc*/
+/*jquery hasta 991px sigue acordeon, en 992 ya es para pc
+320px — 480px: Dispositivos móviles
+481px — 768px: iPads, Tabletas
+769px — 1024px: pantallas pequeñas, laptops
+1025px — 1200px: Computadoras de escritorio, pantallas grandes
+1201px y más —  Pantallas extra-grandes, TV
+
+
+font-size: x-small | small | medium | large | x-large/*25px;
+
+*/
+
+@media (min-width: 320px) and (max-width: 480px){
+    p{
+        font-size: x-small;/*10px;*/
+    }
+
+    nav{
+        height: 70px;
+    }
+
+    .nav-item{
+        font-size: small;/*13px;*/
+        padding: 9px;
+    }
+
+    .containerAbove{
+        display: grid;
+        grid-template-columns: 1;
+    }
+
+    #title{
+        font-size: medium;/*25px;*/
+    }
+
+    #centralNew{
+        display: grid;
+        grid-template-rows: 1;  
+        gap: 5px;
+    }
+
+    #portada{
+        width: 80%;
+        height: 15vh;
+    }
+
+    #centralText{
+        grid-template-columns: 1;
+    }
+
+    #btn-more{
+        padding: 10px 20px;
+        font-size: medium;
+        letter-spacing: 0.15em;
+    }
+
+    .column-right{    
+        padding: 10px;
+    }
+
+    #title-right{
+        padding-bottom: 7px;
+        font-size: large;/*30px;*/
+    }
+
+    .subtitle-right{
+        padding-bottom: 7px;
+        font-size: xx-small;/*18px;*/
+    }
+
+    .container-below{
+        padding: 25px 0 15px 0;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .text-new-below{
+        padding-left: 7px;
+    }
+
+    .title-new-below{
+        font-size: small;
+    }
+
+    .paragraph-new-below{
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 1024px){
+
+}
+
+@media (max-width: 1200px){
+    p{
+        font-size: 15px;
+    }
+
+    nav{
+        height: 100px;
+    }
+
+    .nav-item{
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .containerAbove{
+        display: grid;
+        grid-template-columns: 65% 35%;
+    }
+
+    #title{
+        font-size: 50px;
+    }
+
+    #centralNew{
+        display: grid;
+        grid-template-rows: 2;  
+        gap: 15px;
+    }
+
+    #portada{
+        width: 90%;
+        height: 35vh;
+    }
+
+    #centralText{
+        grid-template-columns: 45% 45%;
+    }
+
+    #btn-more{
+        padding: 15px 25px;
+        font-size: 13px;
+        letter-spacing: 0.4em;
+    }
+
+    .column-right{    
+        padding: 25px;
+    }
+
+    #title-right{
+        padding-bottom: 25px;
+        font-size: x-large;/*30px;*/
+    }
+
+    .subtitle-right{
+        padding-bottom: 15px;
+        font-size: small;
+    }
+
+    .container-below{
+        padding: 50px 0 30px 0;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .text-new-below{
+        padding-left: 15px;
+    }
+
+    .title-new-below{
+        font-size: medium;/*17px;*/
+    }
+
+    .paragraph-new-below{
+        font-size: small;
+    }
+
+}
+
+@media (min-width: 1201px){
+
+}

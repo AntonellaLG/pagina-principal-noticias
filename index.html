@@ -53,7 +53,13 @@
   <main class="container">
     <div class="containerAbove">
       <div id="centralNew">
-        <img id="portada" src="./assets/images/image-web-3-desktop.jpg" alt="Imagen de portada">
+        <picture>
+          <source media="(max-width: 991px)" srcset="image-web-3-mobile.jpg" />
+          <source media="(min-width: 992px)" srcset="image-web-3-desktop.jpg" />
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="Imagen de portada" />
+        </picture>
+        
+        <!--<img id="portada" src="./assets/images/image-web-3-desktop.jpg" alt="Imagen de portada">-->
 
         <div id="centralText">
           <div>
