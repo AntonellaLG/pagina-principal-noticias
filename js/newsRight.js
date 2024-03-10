@@ -9,14 +9,25 @@ fetch('/data/news-right.json')
 
 .then((newsR)=>{
     //console.log(newsR);
-    newsR.forEach(rightNew => {
-        newsRight.innerHTML += `
-        <div class='new-right'>
-            <h5 class='subtitle-right'>${rightNew.title}</h5>
-            <p>${rightNew.paragraph}</p>
-        </div>
-        `
-    });
+    //Separo el último para que no tenga división
+    for (let i = 0; i < newsR.length; i++){
+        if(i!=newsR.length-1){
+            newsRight.innerHTML += `
+            <div class='new-right'>
+                <h5 class='subtitle-right'>${newsR[i].title}</h5>
+                <p>${newsR[i].paragraph}</p>
+                <hr>
+            </div>
+            `
+        }else{
+            newsRight.innerHTML += `
+            <div class='new-right'>
+                <h5 class='subtitle-right'>${newsR[i].title}</h5>
+                <p>${newsR[i].paragraph}</p>
+            </div>
+            `
+        }
+    };
 })
 
 .catch((error)=>{ //Atrapo posible error
