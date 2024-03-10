@@ -12,31 +12,22 @@
     padding: 0;
 }
 
-/*p{
-    font-size: 15px;
-}*/
-
-/*nav{
-    height: 100px;
-}*/
-
-/*.nav-item{
-    font-size: 18px;
-    padding: 15px;
-}*/
-
 .nav-item:hover{
     color: var(--soft-red);
 }
 
-/*.containerAbove{
-    display: grid;
-    grid-template-columns: 65% 35%;
-}*/
-
 #title{
     font-weight: bold;
     color: var(--very-dark-blue);
+}
+
+#centralNew{
+    display: grid;
+}
+
+#portada{
+    width: 90%;
+    height: 35vh;
 }
 
 #centralText{
@@ -46,7 +37,10 @@
 
 #btn-more{
     border: none;
+    padding: 15px 25px;
+    font-size: 13px;
     font-weight: bold;
+    letter-spacing: 0.4em;
     color: var(--off-white);
     background-color: var(--soft-red);
 }
@@ -57,17 +51,22 @@
 
 .column-right{
     width: 80%;
+    padding: 25px;
     background-color: var(--very-dark-blue);
 }
 
 #title-right{
     margin: 0;
+    padding-bottom: 25px;
+    font-size: 30px;
     font-weight: bold;
     color: var(--soft-orange);
 }
 
 .subtitle-right{
     margin: 0;
+    padding-bottom: 15px;
+    font-size: 18px;
     color: var(--off-white);
 }
 
@@ -84,7 +83,9 @@ hr{
 }
 
 .container-below{
+    padding: 50px 0 30px 0;
     display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
 .new-below{
@@ -94,10 +95,11 @@ hr{
 
 .img-new-below{
     width: 100%;
-    height: 85%;
+    height: 87%;
 }
 
 .text-new-below{
+    padding-left: 15px;
     display: grid;
     grid-template-rows: 3;
 }
@@ -107,6 +109,7 @@ hr{
 }
 
 .title-new-below{
+    font-size: 17px;
     font-weight: bold;
     color: var(--very-dark-blue);
 }
@@ -114,21 +117,11 @@ hr{
 .paragraph-new-below{
     color: var(--dark-grayish-blue);
 }
-/*jquery hasta 991px sigue acordeon, en 992 ya es para pc
-320px — 480px: Dispositivos móviles
-481px — 768px: iPads, Tabletas
-769px — 1024px: pantallas pequeñas, laptops
-1025px — 1200px: Computadoras de escritorio, pantallas grandes
-1201px y más —  Pantallas extra-grandes, TV
-
-
-font-size: x-small | small | medium | large | x-large/*25px;
-
-*/
+/*jquery hasta 991px sigue acordeon, en 992 ya es para pc*/
 
 @media (min-width: 320px) and (max-width: 480px){
     p{
-        font-size: x-small;/*10px;*/
+        font-size: medium;/*10px;*/
     }
 
     nav{
@@ -141,12 +134,14 @@ font-size: x-small | small | medium | large | x-large/*25px;
     }
 
     .containerAbove{
+        padding: 20px;
+        width: 100%;
         display: grid;
         grid-template-columns: 1;
     }
 
     #title{
-        font-size: medium;/*25px;*/
+        font-size: 35px;/*25px;*/
     }
 
     #centralNew{
@@ -156,8 +151,8 @@ font-size: x-small | small | medium | large | x-large/*25px;
     }
 
     #portada{
-        width: 80%;
-        height: 15vh;
+        width: 100%;
+        height: 100%;
     }
 
     #centralText{
@@ -166,63 +161,126 @@ font-size: x-small | small | medium | large | x-large/*25px;
 
     #btn-more{
         padding: 10px 20px;
-        font-size: medium;
-        letter-spacing: 0.15em;
+        margin-bottom: 50px;
+        font-size: small;
+        letter-spacing: 0.1em;
     }
 
     .column-right{    
-        padding: 10px;
+        padding: 20px;
+        width: 100%;
     }
 
     #title-right{
         padding-bottom: 7px;
-        font-size: large;/*30px;*/
+        font-size: x-large;/*30px;*/
     }
 
     .subtitle-right{
         padding-bottom: 7px;
-        font-size: xx-small;/*18px;*/
+        font-size: large;/*18px;*/
     }
 
     .container-below{
-        padding: 25px 0 15px 0;
+        padding: 25px 20px 15px 20px;
         grid-template-columns: repeat(1,1fr);
     }
 
     .text-new-below{
-        padding-left: 7px;
+        padding-left: 15px;
     }
 
     .title-new-below{
-        font-size: small;
+        font-size: large;
     }
 
     .paragraph-new-below{
-        font-size: x-small;
+        font-size: small;
     }
 }
 
-@media (max-width: 768px){
-
-}
-
-@media (max-width: 1024px){
-
-}
-
-@media (max-width: 1200px){
+@media (max-width:768px){
     p{
-        font-size: 15px;
+        font-size: medium;
     }
 
+    nav{
+        height: 80px;
+    }
+
+    .containerAbove{
+        padding: 20px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1;
+    }
+    
+    #title{
+        font-size: 40px;/*25px;*/
+    }
+
+    #portada{
+        width: 100%;
+        height: 100%;
+    }
+
+    #btn-more{
+        padding: 12px 23px;
+        margin-bottom: 50px;
+    }
+
+    .column-right{    
+        padding: 20px;
+        width: 100%;
+    }
+
+    #title-right{
+        padding-bottom: 15px;
+        font-size: x-large;/*30px;*/
+    }
+
+    .subtitle-right{
+        padding-bottom: 10px;
+    }
+
+    .container-below{
+        padding: 27px 20px 17px 20px;
+        grid-template-columns: repeat(1,1fr);
+    }  
+}
+
+@media (max-width:991){
+    
+}
+
+@media (max-width:1200px){
+    /*#centralNew{
+        grid-template-rows: 3;  
+        gap: 15px;
+    }*/
+
+    p{
+        font-size: medium;/*15px;*/
+    }
+
+    nav{
+        height: 90px;
+    }
+}
+
+@media (min-width: 1201px){
+    p{
+        font-size: medium;
+    }
+    
     nav{
         height: 100px;
     }
 
-    .nav-item{
-        font-size: 18px;
-        padding: 15px;
-    }
+    /*    
+    .containerAbove{
+        grid-template-columns: 1;
+    }*/
 
     .containerAbove{
         display: grid;
@@ -233,15 +291,21 @@ font-size: x-small | small | medium | large | x-large/*25px;
         font-size: 50px;
     }
 
-    #centralNew{
-        display: grid;
-        grid-template-rows: 2;  
-        gap: 15px;
+    .nav-item{
+        font-size: large;/*18px;*/
+        padding: 15px;
     }
 
+    /*
+        #centralNew{
+        display: grid;
+        grid-template-rows: 1;  
+        gap: 5px;
+    }*/
+
     #portada{
-        width: 90%;
-        height: 35vh;
+        width: 80%;
+        height: 45vh;
     }
 
     #centralText{
@@ -249,44 +313,18 @@ font-size: x-small | small | medium | large | x-large/*25px;
     }
 
     #btn-more{
-        padding: 15px 25px;
-        font-size: 13px;
-        letter-spacing: 0.4em;
-    }
-
-    .column-right{    
-        padding: 25px;
+        padding: 10px 20px;
+        font-size: small;
+        letter-spacing: 0.25em;
     }
 
     #title-right{
-        padding-bottom: 25px;
-        font-size: x-large;/*30px;*/
+        padding-bottom: 7px;
+        font-size: xx-large;/*30px;*/
     }
 
     .subtitle-right{
-        padding-bottom: 15px;
-        font-size: small;
+        padding-bottom: 7px;
+        font-size: large;/*18px;*/
     }
-
-    .container-below{
-        padding: 50px 0 30px 0;
-        grid-template-columns: repeat(3,1fr);
-    }
-
-    .text-new-below{
-        padding-left: 15px;
-    }
-
-    .title-new-below{
-        font-size: medium;/*17px;*/
-    }
-
-    .paragraph-new-below{
-        font-size: small;
-    }
-
-}
-
-@media (min-width: 1201px){
-
 }
